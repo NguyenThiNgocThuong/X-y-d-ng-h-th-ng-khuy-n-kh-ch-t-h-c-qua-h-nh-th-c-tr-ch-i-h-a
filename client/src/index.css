@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+/* Bảng màu và font dùng chung, gọi qua class Tailwind: bg-leaf-500, text-soil-900, font-sans... */
+@theme {
+  --font-sans: "Be Vietnam Pro", ui-sans-serif, system-ui, sans-serif;
+
+  --color-leaf-50: #f3f9ee;
+  --color-leaf-100: #e3f1d8;
+  --color-leaf-200: #c6e3b1;
+  --color-leaf-500: #5fa04e;
+  --color-leaf-600: #4a8a3c;
+  --color-leaf-700: #3f7d3a;
+  --color-leaf-900: #24451f;
+
+  --color-soil-50: #faf6f0;
+  --color-soil-100: #f2e9dc;
+  --color-soil-500: #a07a52;
+  --color-soil-700: #6e5236;
+  --color-soil-900: #3a2c1e;
+
+  --color-sun-400: #f6c453;
+  --color-berry-500: #e0645c;
+}
+
+body {
+  @apply bg-soil-50 font-sans text-soil-900 antialiased;
+}
